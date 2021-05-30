@@ -103,7 +103,7 @@ class ServerListViewModel {
             
                 
                 do {
-                    try NEVPNConnection.startVPNTunnel(<#T##self: NEVPNConnection##NEVPNConnection#>)
+                    try NEVPNConnection.startVPNTunnel()
                     
                 } catch let error {
                     
