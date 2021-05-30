@@ -9,6 +9,10 @@ import Foundation
 
 class ServerListViewModel {
     
+    var view: ServerListViewController?
+    
+    var listOfLocations = [ServerListData]()
+    
     func fetchServersJSON(completion: @escaping (Result<Servers, Error>) -> ()) {
         
         let urlString = "https://assets.windscribe.com/serverlist/ikev2/1/89yr4y78r43gyue4gyut43guy"
@@ -24,7 +28,12 @@ class ServerListViewModel {
             // successful
             do {
                 let serverList = try JSONDecoder().decode(Servers.self, from: data!)
+                
+                DispatchQueue.main.async {
+                    self.view?.setupViews()
+                       }
                 completion(.success(serverList))
+    
                 
             } catch let jsonError {
                 completion(.failure(jsonError))
@@ -38,7 +47,7 @@ class ServerListViewModel {
         fetchServersJSON { (result) in
             switch result {
             case .success(let servers):
-                print(servers.data[0].countryCode)
+                self.listOfLocations = servers.data
             case .failure(let error):
                 print("Failed to fetch data:", error)
             }
