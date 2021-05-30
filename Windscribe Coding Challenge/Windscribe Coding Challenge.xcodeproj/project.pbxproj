@@ -13,6 +13,8 @@
 		A08BE81D2663DCA500118C3B /* Windscribe_Coding_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A08BE81B2663DCA500118C3B /* Windscribe_Coding_Challenge.xcdatamodeld */; };
 		A08BE81F2663DCA600118C3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A08BE81E2663DCA600118C3B /* Assets.xcassets */; };
 		A08BE8222663DCA600118C3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08BE8202663DCA600118C3B /* LaunchScreen.storyboard */; };
+		A08BE82A2663E7D600118C3B /* JSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08BE8292663E7D600118C3B /* JSONData.swift */; };
+		A08BE82F2663E90C00118C3B /* ServerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08BE82E2663E90C00118C3B /* ServerListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A08BE81E2663DCA600118C3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A08BE8212663DCA600118C3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A08BE8232663DCA600118C3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A08BE8292663E7D600118C3B /* JSONData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONData.swift; sourceTree = "<group>"; };
+		A08BE82E2663E90C00118C3B /* ServerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		A08BE8112663DCA500118C3B /* Windscribe Coding Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				A08BE82B2663E83700118C3B /* Servers */,
 				A08BE8122663DCA500118C3B /* AppDelegate.swift */,
 				A08BE8142663DCA500118C3B /* SceneDelegate.swift */,
-				A08BE8162663DCA500118C3B /* ServerListViewController.swift */,
 				A08BE81E2663DCA600118C3B /* Assets.xcassets */,
 				A08BE8202663DCA600118C3B /* LaunchScreen.storyboard */,
 				A08BE8232663DCA600118C3B /* Info.plist */,
 				A08BE81B2663DCA500118C3B /* Windscribe_Coding_Challenge.xcdatamodeld */,
 			);
 			path = "Windscribe Coding Challenge";
+			sourceTree = "<group>";
+		};
+		A08BE82B2663E83700118C3B /* Servers */ = {
+			isa = PBXGroup;
+			children = (
+				A08BE8292663E7D600118C3B /* JSONData.swift */,
+				A08BE82D2663E87700118C3B /* ViewModel */,
+				A08BE82C2663E86A00118C3B /* Views */,
+			);
+			path = Servers;
+			sourceTree = "<group>";
+		};
+		A08BE82C2663E86A00118C3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A08BE8162663DCA500118C3B /* ServerListViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A08BE82D2663E87700118C3B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A08BE82E2663E90C00118C3B /* ServerListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +168,8 @@
 			files = (
 				A08BE8172663DCA500118C3B /* ServerListViewController.swift in Sources */,
 				A08BE8132663DCA500118C3B /* AppDelegate.swift in Sources */,
+				A08BE82A2663E7D600118C3B /* JSONData.swift in Sources */,
+				A08BE82F2663E90C00118C3B /* ServerListViewModel.swift in Sources */,
 				A08BE8152663DCA500118C3B /* SceneDelegate.swift in Sources */,
 				A08BE81D2663DCA500118C3B /* Windscribe_Coding_Challenge.xcdatamodeld in Sources */,
 			);

@@ -7,11 +7,17 @@
 
 import UIKit
 
+
 class ServerListViewController: UIViewController {
 
+    var viewModel: ServerListViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        viewModel = ServerListViewModel()
+        
+        viewModel?.listServers()
     }
 
 
