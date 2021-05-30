@@ -7,11 +7,12 @@
 
 import UIKit
 
-
 class ServerListViewController: UIViewController {
 
     var viewModel: ServerListViewModel?
     weak var tableview: UITableView?
+    
+    
     
     
     
@@ -21,6 +22,7 @@ class ServerListViewController: UIViewController {
         viewModel = ServerListViewModel()
         viewModel?.view = self
         viewModel?.listServers()
+        
     }
     
     open func setupViews() {
@@ -86,5 +88,9 @@ extension ServerListViewController: UITableViewDelegate,  UITableViewDataSource 
         return 100
     }
     
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }
 
