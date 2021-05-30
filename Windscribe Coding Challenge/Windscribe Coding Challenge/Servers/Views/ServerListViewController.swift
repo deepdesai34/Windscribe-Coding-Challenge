@@ -31,7 +31,7 @@ class ServerListViewController: UIViewController {
              return table
          }()
         
-        tableview.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
+        tableview.register(ServerTableViewCell.self, forCellReuseIdentifier: "cellId")
             
         view.addSubview(tableview)
             
@@ -67,15 +67,24 @@ extension ServerListViewController: UITableViewDelegate,  UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = self.tableview?.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
         
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "cellId")
-        cell.backgroundColor = UIColor.white
+        let cell = tableview?.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! ServerTableViewCell
+        
         return cell
+        
+    }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        guard let serverNode = viewModel?.listOfLocations[indexPath.section].nodes[indexPath.row] else { return }
+        
+        let serverCell = cell as? ServerTableViewCell
+        serverCell?.setup(node: serverNode)
     }
     
-   
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return 100
+    }
     
 }
 

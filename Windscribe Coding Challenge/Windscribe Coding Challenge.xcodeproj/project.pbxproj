@@ -15,6 +15,7 @@
 		A08BE8222663DCA600118C3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08BE8202663DCA600118C3B /* LaunchScreen.storyboard */; };
 		A08BE82A2663E7D600118C3B /* JSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08BE8292663E7D600118C3B /* JSONData.swift */; };
 		A08BE82F2663E90C00118C3B /* ServerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08BE82E2663E90C00118C3B /* ServerListViewModel.swift */; };
+		A08BE831266425B200118C3B /* ServerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08BE830266425B200118C3B /* ServerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A08BE8232663DCA600118C3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A08BE8292663E7D600118C3B /* JSONData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONData.swift; sourceTree = "<group>"; };
 		A08BE82E2663E90C00118C3B /* ServerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerListViewModel.swift; sourceTree = "<group>"; };
+		A08BE830266425B200118C3B /* ServerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				A08BE8162663DCA500118C3B /* ServerListViewController.swift */,
+				A08BE830266425B200118C3B /* ServerTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A08BE831266425B200118C3B /* ServerTableViewCell.swift in Sources */,
 				A08BE8172663DCA500118C3B /* ServerListViewController.swift in Sources */,
 				A08BE8132663DCA500118C3B /* AppDelegate.swift in Sources */,
 				A08BE82A2663E7D600118C3B /* JSONData.swift in Sources */,

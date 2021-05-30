@@ -32,6 +32,7 @@ class ServerListViewModel {
                 DispatchQueue.main.async {
                     self.view?.setupViews()
                        }
+                
                 completion(.success(serverList))
     
                 
